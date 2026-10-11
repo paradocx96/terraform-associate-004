@@ -1,0 +1,29 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!example.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+*.tfplan
+tfplan
+generated.tf
+
+# Lab output
+labs/**/out/
+labs/**/*.txt
+labs/**/*.json
+!labs/**/README.md
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
