@@ -1,4 +1,4 @@
-# Domain 4 — Terraform Configuration
+# Domain 4 - Terraform Configuration
 
 **Objectives:** 4a resource vs data · 4b References · 4c Variables and outputs · 4d Complex types · 4e Expressions and functions · 4f Dependencies · 4g Custom conditions · 4h Sensitive data and Vault
 
@@ -65,7 +65,7 @@ Ways to set values: defaults, `TF_VAR_name`, `terraform.tfvars`, `*.auto.tfvars`
 
 Accessing collections: `var.vpc_cidrs["us-east-1"]` (map key), `var.names[0]` (list index). Not `var.vpc_cidrs.0`, not `vpc_cidrs[...]` without `var.`.
 
-Auto-loaded files: `terraform.tfvars`, `terraform.tfvars.json`, `*.auto.tfvars`, `*.auto.tfvars.json` are used by a plain `terraform plan` — no flag needed. Any other file name (e.g., `prod.tfvars`) needs `-var-file=prod.tfvars`.
+Auto-loaded files: `terraform.tfvars`, `terraform.tfvars.json`, `*.auto.tfvars`, `*.auto.tfvars.json` are used by a plain `terraform plan` - no flag needed. Any other file name (e.g., `prod.tfvars`) needs `-var-file=prod.tfvars`.
 
 **Precedence (lowest → highest):** default → env `TF_VAR_*` → `terraform.tfvars` → `terraform.tfvars.json` → `*.auto.tfvars*` (alphabetical) → `-var` / `-var-file` (order given).
 
@@ -143,8 +143,8 @@ name = "${var.project}-${var.env}"
 
 ### Meta-arguments
 
-- **`count`** — N copies (`count.index`). Index-based: removing an item from the middle of a list shifts everything after it.
-- **`for_each`** — one instance per element of a **map or set of strings** (`each.key`, `each.value`). Keyed → stable when items are added/removed.
+- **`count`** - N copies (`count.index`). Index-based: removing an item from the middle of a list shifts everything after it.
+- **`for_each`** - one instance per element of a **map or set of strings** (`each.key`, `each.value`). Keyed → stable when items are added/removed.
 - **`depends_on`**, **`provider`**, **`lifecycle`** (see 4f).
 
 ```hcl
@@ -234,7 +234,7 @@ resource "aws_instance" "web" {
   }
 }
 
-# 4. Check block — continuous validation, produces warnings (does not block)
+# 4. Check block - continuous validation, produces warnings (does not block)
 check "health" {
   data "http" "app" {
     url = "https://example.com/health"
@@ -252,7 +252,7 @@ check "health" {
 | Variable `validation` | When variable value is evaluated | Yes |
 | `precondition` | Before the object is evaluated/created | Yes |
 | `postcondition` | After the object is created/read | Yes |
-| `check` block `assert` | End of plan/apply | **No** — warning only |
+| `check` block `assert` | End of plan/apply | **No** - warning only |
 
 ## 4h. Sensitive data, ephemeral values and Vault
 
@@ -283,7 +283,7 @@ variable "db_password" {
 | **Ephemeral resources** (`ephemeral "type" "name" {}`) | Fetch a secret at run time without persisting it |
 | **Write-only arguments** (e.g., `password_wo` + `password_wo_version`) | Send a value to the provider without storing it in state |
 
-Ephemeral values can only be used in other ephemeral contexts (ephemeral resources, provider configuration, write-only arguments, ephemeral outputs/variables, provisioner/connection blocks). Using one in a normal argument is an error. Which resources offer write-only arguments is **provider-specific** — check provider docs.
+Ephemeral values can only be used in other ephemeral contexts (ephemeral resources, provider configuration, write-only arguments, ephemeral outputs/variables, provisioner/connection blocks). Using one in a normal argument is an error. Which resources offer write-only arguments is **provider-specific** - check provider docs.
 
 ### HashiCorp Vault
 

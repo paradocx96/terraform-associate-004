@@ -1,4 +1,4 @@
-# Domain 5 — Terraform Modules
+# Domain 5 - Terraform Modules
 
 **Objectives:** 5a How Terraform sources modules · 5b Variable scope · 5c Using modules · 5d Module versions
 
@@ -94,7 +94,7 @@ Providers: child modules inherit the parent's default (non-aliased) provider con
 
 - `version` is supported **only** for modules from a **registry** (public or private). It accepts the same constraint syntax as providers (`~> 6.0`, `>= 5.0, < 7.0`).
 - For Git sources, pin with `?ref=` (tag, branch or commit).
-- For local paths, there is no version — you get whatever is on disk.
+- For local paths, there is no version - you get whatever is on disk.
 - Pin versions for repeatable builds; upgrade deliberately with `terraform init -upgrade`.
 
 ```hcl

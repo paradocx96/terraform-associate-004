@@ -1,4 +1,4 @@
-# Domain 2 — Terraform Fundamentals
+# Domain 2 - Terraform Fundamentals
 
 **Objectives:** 2a Install and version providers · 2b How Terraform uses providers · 2c Multiple providers · 2d How Terraform uses and manages state
 
@@ -107,8 +107,8 @@ Why Terraform needs state:
 
 1. **Mapping** config blocks to real resource IDs.
 2. **Metadata** (dependencies, provider info, resource ordering for destroy).
-3. **Performance** — caching attribute values so large infrastructures don't require querying every resource every time (you can skip refresh with `-refresh=false`).
-4. **Collaboration** — shared state is the team's source of truth (via remote backends).
+3. **Performance** - caching attribute values so large infrastructures don't require querying every resource every time (you can skip refresh with `-refresh=false`).
+4. **Collaboration** - shared state is the team's source of truth (via remote backends).
 
 Critical properties:
 
