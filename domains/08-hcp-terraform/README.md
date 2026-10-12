@@ -66,6 +66,28 @@ An HCP Terraform **workspace** is a full environment for one configuration insta
 
 Terraform Enterprise adds self-hosting, air-gapped installs and enterprise controls.
 
+### Execution modes, versions and tokens
+
+- **Execution mode** per workspace: **Remote** (runs on HCP Terraform), **Local** (runs on your machine; HCP Terraform only stores state), **Agent** (runs on your own agents inside your network).
+- Each workspace has its **Terraform version** setting; upgrade it deliberately (tutorial "Upgrade Terraform version in HCP Terraform").
+- **API token types:** user, team, and organization tokens. `terraform login` creates a user token.
+- **Auto-apply** on a workspace skips manual confirmation; leave it off for production unless policy-controlled.
+
+### Team permissions
+
+- **Teams** are groups of users; grant them access to organizations, projects and workspaces.
+- Fixed workspace permission levels: **Read, Plan, Write, Admin** (plus custom permissions). Use least privilege.
+
+### Sharing data between workspaces
+
+- **Run triggers** chain runs (source workspace apply → downstream run).
+- The **`terraform_remote_state`** data source reads another workspace's **outputs** (the source workspace must allow remote state sharing). Alternative: the `tfe_outputs` data source from the `tfe` provider.
+
+### Policy enforcement levels
+
+- **Sentinel:** advisory, soft-mandatory (overridable), hard-mandatory.
+- **OPA:** advisory and mandatory.
+
 ## 8c. Organising workspaces and projects
 
 - **Projects** group workspaces so you can manage **access (team permissions)** and settings for related workspaces, and share variable sets across them.

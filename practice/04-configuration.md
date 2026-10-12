@@ -179,3 +179,36 @@
 
 **B.** (`templatefile()` renders a template file with variables.)
 </details>
+
+## Official-style questions (based on HashiCorp's sample formats)
+
+**Q16.** Given `variable "vpc_cidrs" { type = map ... }` containing the key `us-east-1`, how do you reference that key's value?
+
+- A) `var.vpc_cidrs["us-east-1"]`
+- B) `var.vpc_cidrs.0`
+- C) `vpc_cidrs["us-east-1"]`
+- D) `var.vpc_cidrs[0]`
+
+<details><summary>Answer</summary>
+
+**A.** Maps are indexed by key and variables use the `var.` prefix. Numeric index/`.0` is for lists/tuples.
+</details>
+
+**Q17.** You saved your variable values in `terraform.tfvars` in the working directory. Which command uses those values when creating a plan?
+
+- A) `terraform plan`
+- B) `terraform plan -var-file=terraform.tfvars`
+- C) All of the above
+- D) None of the above
+
+<details><summary>Answer</summary>
+
+**C.** `terraform.tfvars` is loaded automatically; passing it explicitly with `-var-file` also works.
+</details>
+
+**Q18.** True or false: usernames and passwords referenced in Terraform code, even as variables, end up in plain text in the state file.
+
+<details><summary>Answer</summary>
+
+**True.** Even sensitive variables are stored in state in plaintext (unless ephemeral values / write-only arguments are used), so protect state.
+</details>

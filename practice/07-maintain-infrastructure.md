@@ -78,3 +78,22 @@ They can contain sensitive information such as tokens, resource details, and API
 
 **A.**
 </details>
+
+**Q8.** Terraform state is out of sync, and the plan wants to destroy resources you didn't expect. Which category of problem does HashiCorp's troubleshooting guidance place this in?
+
+- A) Language error
+- B) State error
+- C) Core error
+- D) Provider error
+
+<details><summary>Answer</summary>
+
+**B.** Language, state, core, and provider errors are the four types; rule out configuration (language) errors first, then review state.
+</details>
+
+**Q9.** Which environment variables let you capture logs separately for Terraform core and provider plugins?
+
+<details><summary>Answer</summary>
+
+`TF_LOG_CORE` and `TF_LOG_PROVIDER` (plus `TF_LOG_PATH` to write to a file).
+</details>

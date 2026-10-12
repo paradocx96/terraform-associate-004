@@ -74,7 +74,8 @@ terraform-associate-004-prep/
 │   ├── 06-hcl-cheatsheet.md       # Syntax, types, functions, meta-arguments
 │   ├── 07-glossary.md             # Terms you must recognise
 │   ├── 08-objective-checklist.md  # All 37 objectives as a checklist
-│   └── 09-final-notes.md
+│   ├── 09-final-notes.md
+│   └── 10-coverage-matrix.md     # Objective → repo files → official reading
 ├── domains/
 │   ├── 01-iac-concepts/
 │   ├── 02-terraform-fundamentals/
@@ -140,7 +141,7 @@ All questions in [`practice/`](practice/) are **original** study questions writt
 
 ## Progress Tracker
 
-Tick off objectives in [`docs/08-objective-checklist.md`](docs/08-objective-checklist.md).
+Tick off objectives in [`docs/08-objective-checklist.md`](docs/08-objective-checklist.md). See [`docs/10-coverage-matrix.md`](docs/10-coverage-matrix.md) for how each objective maps to this repo and the official reading.
 
 - [ ] Week 1 complete
 - [ ] Week 2 complete

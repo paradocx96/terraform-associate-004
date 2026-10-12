@@ -75,6 +75,19 @@ unset TF_LOG TF_LOG_PATH
 - Logs can contain **sensitive data**; sanitise before sharing.
 - Crash logs: `crash.log` (don't commit it).
 
+## Troubleshooting (learning-path tutorial "Troubleshoot Terraform")
+
+HashiCorp groups problems into **four types**. Rule out earlier ones before suspecting later ones:
+
+| Type | What it is | Typical clue |
+|---|---|---|
+| **Language errors** | Invalid HCL / configuration (syntax, types, bad references) | `terraform validate` / `fmt` messages with a file and line |
+| **State errors** | State is out of sync with reality or config, which can make Terraform change or destroy resources | Unexpected plan diffs, missing resources; use `state list/show`, `-refresh-only` |
+| **Core errors** | Bugs in Terraform core (config interpretation, state handling, graph, provider communication) | Crashes, `crash.log`; capture `TF_LOG_CORE` |
+| **Provider errors** | Provider plugin issues (authentication, API calls, resource mapping) | API/auth errors; capture `TF_LOG_PROVIDER` |
+
+When reporting bugs, include the relevant logs (core vs provider) — sanitise secrets first.
+
 ## Exam traps
 
 - `terraform import` (CLI) changes state only; the **import block** can generate config.

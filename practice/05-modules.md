@@ -95,3 +95,15 @@
 
 **B.**
 </details>
+
+**Q9.** Which is a recommended practice when composing modules?
+
+- A) Nest modules as deeply as possible
+- B) Keep hierarchies shallow and wire modules together in the root by passing outputs to inputs
+- C) Declare `provider` blocks inside every reusable module
+- D) Hard-code environment IDs inside modules
+
+<details><summary>Answer</summary>
+
+**B.** Reusable modules should leave provider configuration to the caller.
+</details>

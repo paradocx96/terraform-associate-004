@@ -109,3 +109,34 @@ With remote execution, the plan runs on HCP Terraform's infrastructure, not your
 
 Sharing and versioning your organisation's internal modules (and providers) so teams can reuse approved building blocks.
 </details>
+
+**Q11.** Which are valid HCP Terraform workspace execution modes?
+
+- A) Remote, Local, Agent
+- B) Fast, Slow, Safe
+- C) Plan, Apply, Destroy
+- D) VCS, CLI, API
+
+<details><summary>Answer</summary>
+
+**A.** (D lists the run *workflows*, not execution modes.)
+</details>
+
+**Q12.** Which data source reads another workspace's outputs?
+
+- A) `terraform_remote_state`
+- B) `terraform_outputs_local`
+- C) `aws_state`
+- D) `hcp_workspace`
+
+<details><summary>Answer</summary>
+
+**A.** The source workspace must allow remote state sharing.
+</details>
+
+**Q13.** Name the fixed workspace permission levels.
+
+<details><summary>Answer</summary>
+
+Read, Plan, Write, Admin (plus custom permissions).
+</details>

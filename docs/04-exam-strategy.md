@@ -1,4 +1,4 @@
-# 04 - Exam Strategy
+# 04 — Exam Strategy
 
 ## Time management
 
@@ -10,23 +10,23 @@
 ## Reading questions
 
 - Underline the **keyword**: *which command*, *which block*, *NOT*, *EXCEPT*, *best*, *first*.
-- "Choose two/three" - count how many you must select before reviewing options.
+- "Choose two/three" — count how many you must select before reviewing options.
 - Eliminate options that are obviously another tool's feature (Ansible, CloudFormation) or a removed/deprecated command.
-- True/false: look for absolutes ("always", "never", "only"). Terraform answers are rarely absolute - but some are (e.g., module `version` works only for registry sources).
+- True/false: look for absolutes ("always", "never", "only"). Terraform answers are rarely absolute — but some are (e.g., module `version` works only for registry sources).
 
 ## Classic traps
 
 | Trap | Truth |
 |---|---|
-| "`sensitive = true` keeps secrets out of state" | No - only redacts CLI output. Values remain in state. |
+| "`sensitive = true` keeps secrets out of state" | No — only redacts CLI output. Values remain in state. |
 | "`terraform plan` changes infrastructure" | Never. |
-| "`terraform validate` contacts the cloud" | No - static check (needs `init` for providers/modules). |
-| "`terraform refresh` is the way to update state" | Deprecated - use `plan/apply -refresh-only`. |
-| "`taint` is the way to force replacement" | Deprecated - use `apply -replace=ADDR`. |
+| "`terraform validate` contacts the cloud" | No — static check (needs `init` for providers/modules). |
+| "`terraform refresh` is the way to update state" | Deprecated — use `plan/apply -refresh-only`. |
+| "`taint` is the way to force replacement" | Deprecated — use `apply -replace=ADDR`. |
 | "`version` works on any module source" | Only registry (public/private) sources. |
 | "Backend config can use variables" | No. Use partial config (`-backend-config`). |
 | "`for_each` accepts a list" | Only a map or a set of strings (`toset(...)`). |
-| "Child modules can read the parent's variables" | No - pass inputs explicitly. |
+| "Child modules can read the parent's variables" | No — pass inputs explicitly. |
 | "Lock file should be gitignored" | Commit `.terraform.lock.hcl`. Do **not** commit `.terraform/` or state. |
 | "`terraform import` writes configuration" | CLI `import` updates state only. The `import` block can generate config with `plan -generate-config-out`. |
 | "Destroy deletes the state file" | State is updated (resources removed); file remains. |
@@ -52,7 +52,7 @@
 - [ ] Quiet, well-lit room; follow the proctor's room scan instructions
 - [ ] Charger plugged in; phone out of reach (per rules)
 - [ ] Have done the system/browser check on this machine
-- [ ] Breathe - read each question twice
+- [ ] Breathe — read each question twice
 
 ## If you don't pass
 

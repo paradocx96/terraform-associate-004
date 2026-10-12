@@ -1,4 +1,4 @@
-# 09 - Final Notes
+# 09 — Final Notes
 
 - Keep the **official exam content list** open while studying and tick objectives off in [`08-objective-checklist.md`](08-objective-checklist.md).
 - Re-verify exam facts (price, version, objectives) on HashiCorp's pages before booking; they change.

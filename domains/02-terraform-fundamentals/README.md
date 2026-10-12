@@ -62,6 +62,14 @@ provider "aws" {
 
 `required_version` in the `terraform` block restricts which CLI versions can run the configuration.
 
+Managing Terraform versions (learning-path tutorial "Manage Terraform versions"):
+
+- `required_version` accepts the same constraint operators as providers (`>= 1.9.0, < 2.0.0`).
+- Use a version manager (e.g., `tfenv`) or package manager to switch CLI versions locally.
+- In **HCP Terraform**, each workspace has its own Terraform version setting (see Domain 8).
+- Provider and CLI versions are independent: `required_version` → CLI; `required_providers` → providers.
+- The `terraform` block is also where `backend`/`cloud` and `required_providers` live.
+
 ## 2c. Multiple providers
 
 **Different providers** in one config: just declare each in `required_providers`.
