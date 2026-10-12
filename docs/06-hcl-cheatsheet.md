@@ -1,4 +1,4 @@
-# 06 — HCL Cheat Sheet
+# 06 - HCL Cheat Sheet
 
 ## Block types
 

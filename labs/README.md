@@ -1,6 +1,6 @@
 # Labs
 
-Hands-on exercises. **Type the code yourself** — copying teaches nothing.
+Hands-on exercises. **Type the code yourself** - copying teaches nothing.
 
 | Lab | Topic | Domains | Cloud account? | Time |
 |---|---|---|---|---|

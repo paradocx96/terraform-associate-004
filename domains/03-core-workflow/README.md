@@ -1,4 +1,4 @@
-# Domain 3 — Core Terraform Workflow
+# Domain 3 - Core Terraform Workflow
 
 **Objectives:** 3a Workflow · 3b init · 3c validate · 3d plan · 3e apply · 3f destroy · 3g fmt
 
@@ -21,7 +21,7 @@ Write  →  Init  →  (Validate / Fmt)  →  Plan  →  Apply  →  (Destroy wh
 | Apply | Execute changes | `terraform apply` |
 | Destroy | Remove everything managed | `terraform destroy` |
 
-Team variations: configs live in Git, plans run in CI on pull requests, applies run after approval — or via HCP Terraform.
+Team variations: configs live in Git, plans run in CI on pull requests, applies run after approval - or via HCP Terraform.
 
 ## 3b. `terraform init`
 
@@ -78,10 +78,10 @@ Terraform builds a **dependency graph** (DAG) from references and `depends_on`, 
 
 Executes the plan and updates state.
 
-- `terraform apply` — computes a new plan, asks for `yes`.
-- `terraform apply tfplan` — applies a saved plan, **no interactive approval prompt**.
-- `-auto-approve` — skip the prompt (CI/automation).
-- `-replace=ADDR` — force recreate a single resource (modern replacement for `terraform taint`).
+- `terraform apply` - computes a new plan, asks for `yes`.
+- `terraform apply tfplan` - applies a saved plan, **no interactive approval prompt**.
+- `-auto-approve` - skip the prompt (CI/automation).
+- `-replace=ADDR` - force recreate a single resource (modern replacement for `terraform taint`).
 - If apply fails midway, state records what *was* created; fix and re-run.
 - What happens on apply: Terraform makes the infrastructure changes **and updates the state**. It does not download providers (that is `init`) or fix formatting (that is `fmt`).
 

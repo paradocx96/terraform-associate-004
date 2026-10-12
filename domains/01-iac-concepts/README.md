@@ -1,8 +1,8 @@
-# Domain 1 — Infrastructure as Code (IaC) with Terraform
+# Domain 1 - Infrastructure as Code (IaC) with Terraform
 
 **Objectives:** 1a Explain what IaC is · 1b Advantages of IaC patterns · 1c Multi-cloud, hybrid cloud, service-agnostic workflows
 
-**Estimated study time:** 2–3 hours · **Lab:** none (concepts) — do Lab 01 for context
+**Estimated study time:** 2–3 hours · **Lab:** none (concepts) - do Lab 01 for context
 **Practice:** [`practice/01-iac-concepts.md`](../../practice/01-iac-concepts.md)
 
 ---
@@ -48,7 +48,7 @@ Terraform is cloud-agnostic and uses its own language (HCL). It can be combined 
 - One configuration can use multiple providers: AWS + Cloudflare + Datadog + Kubernetes + GitHub.
 - **Multi-cloud**: manage AWS, Azure, GCP with the *same workflow* (`init → plan → apply`), even though resource types differ per provider.
 - **Hybrid cloud**: on-prem (VMware, OpenStack, etc.) plus public cloud via their providers.
-- **Service-agnostic**: not only compute — DNS, monitoring, identity, SaaS, databases.
+- **Service-agnostic**: not only compute - DNS, monitoring, identity, SaaS, databases.
 - Note: Terraform gives a **common workflow and language**, not a magic abstraction. A `aws_instance` is not interchangeable with `azurerm_linux_virtual_machine`.
 
 ```hcl

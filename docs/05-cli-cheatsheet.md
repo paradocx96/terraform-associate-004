@@ -1,4 +1,4 @@
-# 05 — CLI Cheat Sheet
+# 05 - CLI Cheat Sheet
 
 ## Core workflow
 
@@ -102,7 +102,7 @@ CLI workspaces share the same configuration and backend but keep separate state.
 | `.terraform/` | No |
 | `terraform.tfstate`, `*.tfstate.backup` | **No** (contains secrets) |
 | `crash.log` | No |
-| `*.auto.tfvars` | Depends — never if secret |
+| `*.auto.tfvars` | Depends - never if secret |
 
 ## Variable precedence (lowest → highest)
 

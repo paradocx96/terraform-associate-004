@@ -1,4 +1,4 @@
-# Domain 8 — HCP Terraform
+# Domain 8 - HCP Terraform
 
 **Objectives:** 8a Use HCP Terraform to create infrastructure · 8b Collaboration and governance · 8c Workspaces and projects · 8d CLI integration
 
@@ -104,7 +104,7 @@ Terraform Enterprise adds self-hosting, air-gapped installs and enterprise contr
 terraform login        # opens a browser, stores a user API token locally
 ```
 
-### Connect a configuration — the `cloud` block
+### Connect a configuration - the `cloud` block
 
 ```hcl
 terraform {
@@ -134,7 +134,7 @@ Add the `cloud` block and run `terraform init`; Terraform offers to copy local/r
 - HCP Terraform workspace ≠ CLI workspace.
 - Projects organise workspaces and **scope permissions/variable sets**.
 - Policy checks (Sentinel/OPA) run **after plan, before apply**.
-- With remote execution, local environment variables/credentials are **not** automatically used — configure them in the workspace.
+- With remote execution, local environment variables/credentials are **not** automatically used - configure them in the workspace.
 - `cloud` block is for HCP Terraform / Terraform Enterprise; `backend` blocks are for other backends.
 - Variable sets are the way to share variables across workspaces.
 - HCP Terraform provides remote state storage with locking and versioning.

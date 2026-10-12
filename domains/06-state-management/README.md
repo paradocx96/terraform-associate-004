@@ -1,4 +1,4 @@
-# Domain 6 — Terraform State Management
+# Domain 6 - Terraform State Management
 
 **Objectives:** 6a Local backend · 6b State locking · 6c Remote state / backend block · 6d Drift and state
 
@@ -29,9 +29,9 @@ terraform {
 Locking **prevents two operations from modifying the same state at once**, which could corrupt it.
 
 - Happens automatically on operations that write state (`plan`, `apply`, `destroy`, `state` modifications), if the backend supports locking.
-- Local backend: file lock. Remote backends: depends (S3 supports locking — historically via DynamoDB, newer Terraform versions support a native lock file with `use_lockfile = true`; Azure Blob uses lease locks; GCS supports locking; HCP Terraform locks automatically).
+- Local backend: file lock. Remote backends: depends (S3 supports locking - historically via DynamoDB, newer Terraform versions support a native lock file with `use_lockfile = true`; Azure Blob uses lease locks; GCS supports locking; HCP Terraform locks automatically).
 - `-lock=false` disables locking (risky), `-lock-timeout=60s` waits for a lock.
-- `terraform force-unlock LOCK_ID` removes a stuck lock — only when you're sure no run is active.
+- `terraform force-unlock LOCK_ID` removes a stuck lock - only when you're sure no run is active.
 
 ## 6c. Remote state with the backend block
 

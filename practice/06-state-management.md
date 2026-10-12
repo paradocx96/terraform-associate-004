@@ -1,4 +1,4 @@
-# Domain 6 — State Management (Practice)
+# Domain 6 - State Management (Practice)
 
 **Q1.** What is the default backend and where is state stored?
 
@@ -27,7 +27,7 @@
 **Q3.** Can a `backend` block reference `var.bucket_name`?
 
 - A) Yes
-- B) No — backend blocks can't use variables; use partial configuration (`-backend-config`)
+- B) No - backend blocks can't use variables; use partial configuration (`-backend-config`)
 - C) Yes, but only strings
 - D) Yes, if `sensitive`
 

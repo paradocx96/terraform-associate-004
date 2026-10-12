@@ -1,13 +1,13 @@
-# Lab 01 — Hello Terraform
+# Lab 01 - Hello Terraform
 
 **Objectives:** 2a, 2b, 3a–3g · **Needs:** Terraform CLI only
 
 ## Steps
 
 1. Copy this folder somewhere outside Git, `cd` into it.
-2. `terraform init` — note the downloaded providers and the new `.terraform/` folder and `.terraform.lock.hcl`.
+2. `terraform init` - note the downloaded providers and the new `.terraform/` folder and `.terraform.lock.hcl`.
 3. `terraform fmt` then `terraform validate`.
-4. `terraform plan` — read the `+` lines. Which attribute is "known after apply"?
+4. `terraform plan` - read the `+` lines. Which attribute is "known after apply"?
 5. `terraform plan -out=tfplan`, then `terraform apply tfplan`. Was there a confirmation prompt?
 6. Open the generated `hello-*.txt`. Run `terraform show`, `terraform output`, `terraform state list`.
 7. Run `terraform plan` again → "No changes". (Idempotency.)

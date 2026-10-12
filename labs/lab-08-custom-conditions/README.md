@@ -1,4 +1,4 @@
-# Lab 08 — Custom Conditions
+# Lab 08 - Custom Conditions
 
 **Objectives:** 4g (and 4f lifecycle context) · **Needs:** Terraform CLI only
 

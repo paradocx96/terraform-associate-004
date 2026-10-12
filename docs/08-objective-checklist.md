@@ -1,4 +1,4 @@
-# 08 — Objective Checklist (Terraform Associate 004)
+# 08 - Objective Checklist (Terraform Associate 004)
 
 Tick an objective only when you can **explain it from memory and demonstrate it in a lab**.
 

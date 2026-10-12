@@ -1,4 +1,4 @@
-# Domain 4 — Configuration (Practice)
+# Domain 4 - Configuration (Practice)
 
 **Q1.** What is the difference between a `resource` block and a `data` block?
 

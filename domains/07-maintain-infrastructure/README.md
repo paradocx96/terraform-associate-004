@@ -1,4 +1,4 @@
-# Domain 7 — Maintain Infrastructure with Terraform
+# Domain 7 - Maintain Infrastructure with Terraform
 
 **Objectives:** 7a Import existing infrastructure · 7b Use the CLI to inspect state · 7c Verbose logging
 
@@ -86,15 +86,15 @@ HashiCorp groups problems into **four types**. Rule out earlier ones before susp
 | **Core errors** | Bugs in Terraform core (config interpretation, state handling, graph, provider communication) | Crashes, `crash.log`; capture `TF_LOG_CORE` |
 | **Provider errors** | Provider plugin issues (authentication, API calls, resource mapping) | API/auth errors; capture `TF_LOG_PROVIDER` |
 
-When reporting bugs, include the relevant logs (core vs provider) — sanitise secrets first.
+When reporting bugs, include the relevant logs (core vs provider) - sanitise secrets first.
 
 ## Exam traps
 
 - `terraform import` (CLI) changes state only; the **import block** can generate config.
-- You can't import "into thin air" — a resource block address is required (`to = ...`).
+- You can't import "into thin air" - a resource block address is required (`to = ...`).
 - `TF_LOG=TRACE` is the most verbose; set `TF_LOG_PATH` to persist.
 - `terraform state` subcommands for inspection: `list`, `show`.
-- Import doesn't make Terraform manage things you don't describe in config — you still need matching configuration.
+- Import doesn't make Terraform manage things you don't describe in config - you still need matching configuration.
 
 ## Self-check
 

@@ -1,4 +1,4 @@
-# Domain 3 — Core Workflow (Practice)
+# Domain 3 - Core Workflow (Practice)
 
 **Q1.** What is the core Terraform workflow?
 
