@@ -1,4 +1,4 @@
-# Domain 5 — Modules (Practice)
+# Domain 5 - Modules (Practice)
 
 **Q1.** What is the *root module*?
 

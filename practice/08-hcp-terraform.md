@@ -1,4 +1,4 @@
-# Domain 8 — HCP Terraform (Practice)
+# Domain 8 - HCP Terraform (Practice)
 
 **Q1.** How does an HCP Terraform workspace differ from a CLI workspace?
 
@@ -81,7 +81,7 @@
 
 <details><summary>Answer</summary>
 
-**A and B.** State is also encrypted at rest and access-controlled — but still treat it as sensitive.
+**A and B.** State is also encrypted at rest and access-controlled - but still treat it as sensitive.
 </details>
 
 **Q8.** Which are the HCP Terraform run workflows?

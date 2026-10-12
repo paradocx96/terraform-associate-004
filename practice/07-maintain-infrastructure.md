@@ -1,4 +1,4 @@
-# Domain 7 — Maintain Infrastructure (Practice)
+# Domain 7 - Maintain Infrastructure (Practice)
 
 **Q1.** Which configuration element lets you import an existing resource, show it in `plan`, and optionally generate configuration?
 

@@ -1,4 +1,4 @@
-# Domain 2 — Terraform Fundamentals (Practice)
+# Domain 2 - Terraform Fundamentals (Practice)
 
 **Q1.** From where does `terraform init` download providers by default?
 

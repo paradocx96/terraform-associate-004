@@ -1,4 +1,4 @@
-# Domain 1 — IaC Concepts (Practice)
+# Domain 1 - IaC Concepts (Practice)
 
 **Q1.** Which statement best describes a *declarative* approach to infrastructure?
 
