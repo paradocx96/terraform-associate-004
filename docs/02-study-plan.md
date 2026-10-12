@@ -1,77 +1,77 @@
-# 02 — Study Plan
+# 02 - Study Plan
 
-Three plans. Pick one based on your Terraform experience. Beginners to Terraform: use the **6-week plan**, even if you already know Docker, CI/CD or a cloud platform — Terraform has its own vocabulary (state, plan, providers, modules) that needs hands-on time.
+Three plans. Pick one based on your Terraform experience. Beginners to Terraform: use the **6-week plan**, even if you already know Docker, CI/CD or a cloud platform - Terraform has its own vocabulary (state, plan, providers, modules) that needs hands-on time.
 
 > **Rule #1:** type every lab yourself. Reading alone is the most common reason people fail this exam.
 > **Rule #2:** after each domain, answer its practice questions *closed-book*.
 
 ---
 
-## Plan A — 6 weeks (recommended for Terraform beginners)
+## Plan A - 6 weeks (recommended for Terraform beginners)
 
 **Time:** ~1.5 h on weekdays, ~3 h on one weekend day (≈ 8–10 h/week).
 
-### Week 1 — Foundations (Domains 1, 2, 3)
+### Week 1 - Foundations (Domains 1, 2, 3)
 
 | Day | Task |
 |---|---|
 | 1 | Read [`docs/00-exam-overview.md`](00-exam-overview.md) and [`01-quick-start.md`](01-quick-start.md). Install Terraform + VS Code extension. |
 | 2 | Domain 1 README (IaC concepts). Practice Qs: `practice/01-iac-concepts.md` |
 | 3 | Domain 2 README (providers + state basics). |
-| 4 | **Lab 01** — first config, providers, workflow |
+| 4 | **Lab 01** - first config, providers, workflow |
 | 5 | Domain 3 README (core workflow). Memorise the CLI cheat sheet [`05-cli-cheatsheet.md`](05-cli-cheatsheet.md). |
 | 6 | Practice Qs: domains 2 and 3. Re-do Lab 01 from a blank folder without notes. |
 | 7 | Rest or light review. Write a one-page summary of the workflow in your own words. |
 
-### Week 2 — Configuration I (Domain 4, part 1)
+### Week 2 - Configuration I (Domain 4, part 1)
 
 | Day | Task |
 |---|---|
 | 1 | Domain 4 README: resources vs data, references, variables, outputs, locals |
-| 2 | **Lab 02** — variables, locals, outputs, precedence |
+| 2 | **Lab 02** - variables, locals, outputs, precedence |
 | 3 | Domain 4: complex types, expressions, functions ([`06-hcl-cheatsheet.md`](06-hcl-cheatsheet.md)) |
-| 4 | **Lab 03** — `count`, `for_each`, `for` expressions |
+| 4 | **Lab 03** - `count`, `for_each`, `for` expressions |
 | 5 | Domain 4: dependencies, `lifecycle` (`depends_on`, `create_before_destroy`, `prevent_destroy`, `ignore_changes`) |
 | 6 | Practice Qs: domain 4 (first half) |
 | 7 | Review misses |
 
-### Week 3 — Configuration II + Modules (Domains 4, 5)
+### Week 3 - Configuration II + Modules (Domains 4, 5)
 
 | Day | Task |
 |---|---|
 | 1 | Domain 4: custom conditions (`validation`, `precondition`, `postcondition`, `check`) |
-| 2 | **Lab 08** — custom conditions |
+| 2 | **Lab 08** - custom conditions |
 | 3 | Domain 4: sensitive data, **ephemeral values**, **write-only arguments**, Vault |
 | 4 | Domain 5 README: modules |
-| 5 | **Lab 04** — local modules |
+| 5 | **Lab 04** - local modules |
 | 6 | Practice Qs: domain 4 (second half) and domain 5 |
 | 7 | Review misses. **Checkpoint:** can you explain implicit vs explicit dependencies and module variable scope aloud? |
 
-### Week 4 — State and Maintenance (Domains 6, 7)
+### Week 4 - State and Maintenance (Domains 6, 7)
 
 | Day | Task |
 |---|---|
 | 1 | Domain 6 README: state, backends, locking |
-| 2 | **Lab 05** — state CLI, `moved`, `removed`, drift, backend migration |
+| 2 | **Lab 05** - state CLI, `moved`, `removed`, drift, backend migration |
 | 3 | Domain 6: drift and refresh-only; remote backends concepts |
 | 4 | Domain 7 README: import (CLI + `import` block), state CLI, logging |
-| 5 | **Lab 06** (AWS, optional) — data sources, `dynamic`, import, S3 backend. If skipping AWS, redo Lab 05 with extra scenarios. |
+| 5 | **Lab 06** (AWS, optional) - data sources, `dynamic`, import, S3 backend. If skipping AWS, redo Lab 05 with extra scenarios. |
 | 6 | Practice Qs: domains 6 and 7 |
 | 7 | Review misses |
 
-### Week 5 — HCP Terraform + first full-exam practice (Domain 8)
+### Week 5 - HCP Terraform + first full-exam practice (Domain 8)
 
 | Day | Task |
 |---|---|
 | 1 | Domain 8 README |
-| 2 | **Lab 07** — HCP Terraform: org, workspace, variable set, project, run trigger |
+| 2 | **Lab 07** - HCP Terraform: org, workspace, variable set, project, run trigger |
 | 3 | Domain 8: governance (Sentinel/OPA, private registry, teams, drift detection, explorer, change requests) |
 | 4 | Practice Qs: domain 8 + `practice/rapid-fire.md` |
 | 5 | Take a timed 60-minute mixed set from an external practice-exam provider (see [`03-study-materials.md`](03-study-materials.md)) |
 | 6 | Analyse every wrong answer; map each to an objective in [`08-objective-checklist.md`](08-objective-checklist.md) |
 | 7 | Rest |
 
-### Week 6 — Revision and exam
+### Week 6 - Revision and exam
 
 | Day | Task |
 |---|---|
@@ -85,7 +85,7 @@ Three plans. Pick one based on your Terraform experience. Beginners to Terraform
 
 ---
 
-## Plan B — 4 weeks (some IaC/cloud background)
+## Plan B - 4 weeks (some IaC/cloud background)
 
 | Week | Focus |
 |---|---|
@@ -98,7 +98,7 @@ Daily: ~2 hours.
 
 ---
 
-## Plan C — 2 weeks revision (already hands-on)
+## Plan C - 2 weeks revision (already hands-on)
 
 | Days | Focus |
 |---|---|

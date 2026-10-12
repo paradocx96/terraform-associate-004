@@ -1,8 +1,8 @@
-# 03 — Study Materials
+# 03 - Study Materials
 
-> Always prefer **official HashiCorp sources** for exam facts. Third-party courses vary in quality and date — confirm any course explicitly targets **004 / Terraform 1.12**, not 003.
+> Always prefer **official HashiCorp sources** for exam facts. Third-party courses vary in quality and date - confirm any course explicitly targets **004 / Terraform 1.12**, not 003.
 
-## Official (start here — free)
+## Official (start here - free)
 
 | Resource | Why use it |
 |---|---|
@@ -16,18 +16,18 @@
 | [Terraform sandbox](https://developer.hashicorp.com/terraform/sandbox) | Browser-based practice environment |
 | [Well-Architected Framework](https://developer.hashicorp.com/well-architected-framework) | Best practices context |
 
-## Video / interactive courses (paid or free — verify version)
+## Video / interactive courses (paid or free - verify version)
 
 Look for courses that mention **Terraform Associate 004**. Examples of providers that publish prep material (check current content and ratings before buying):
 
-- KodeKloud — Terraform Associate course with labs (notes site covers 004)
-- Udemy — hands-on courses and practice-exam series for 004 (multiple authors; read recent reviews and "last updated" dates)
-- Whizlabs — prep guide and practice tests
-- freeCodeCamp (YouTube) — good free Terraform foundations; older videos may target 003, so cross-check against the 004 content list
+- KodeKloud - Terraform Associate course with labs (notes site covers 004)
+- Udemy - hands-on courses and practice-exam series for 004 (multiple authors; read recent reviews and "last updated" dates)
+- Whizlabs - prep guide and practice tests
+- freeCodeCamp (YouTube) - good free Terraform foundations; older videos may target 003, so cross-check against the 004 content list
 
 ## Books
 
-- *Terraform: Up & Running* — Yevgeniy Brikman (O'Reilly). Deeper than the exam but excellent for real-world habits.
+- *Terraform: Up & Running* - Yevgeniy Brikman (O'Reilly). Deeper than the exam but excellent for real-world habits.
 
 ## Practice exams
 

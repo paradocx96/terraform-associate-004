@@ -1,4 +1,4 @@
-# 00 — Exam Overview
+# 00 - Exam Overview
 
 ## Official facts (verify before booking)
 
@@ -63,7 +63,7 @@ HashiCorp's summary of the update:
 - Four new topics
   - **4f** `depends_on` and `create_before_destroy` lifecycle rules
   - **4g** Validate configuration using custom conditions
-  - **4h** Ephemeral values and write-only arguments (HashiCorp's change summary lists this; the objective list also covers sensitive data and Vault — study both)
+  - **4h** Ephemeral values and write-only arguments (HashiCorp's change summary lists this; the objective list also covers sensitive data and Vault - study both)
   - **8c** Organise and use HCP Terraform workspaces and projects
 - Tests Terraform **1.12**
 - HCP Terraform content is its own domain (8)
@@ -73,7 +73,7 @@ Source: <https://developer.hashicorp.com/terraform/tutorials/certification-004/a
 ## Registration steps
 
 1. Create/sign in to your HashiCorp certification account via the certification portal.
-2. Choose **Terraform Associate (004)** — not a retired 002/003 appointment.
+2. Choose **Terraform Associate (004)** - not a retired 002/003 appointment.
 3. Pick a date. Book once you are trending toward 85%+ on practice sets, but early enough to stay motivated.
 4. Complete the proctoring system check on the **same computer and network** you'll use on exam day.
 5. Prepare ID and a clear desk/room per the proctor's rules.

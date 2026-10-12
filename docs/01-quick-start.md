@@ -1,4 +1,4 @@
-# 01 — Quick Start: What You Actually Need to Know
+# 01 - Quick Start: What You Actually Need to Know
 
 Read this first. It is the 80/20 of the Terraform Associate exam.
 
@@ -70,7 +70,7 @@ Read this first. It is the 80/20 of the Terraform Associate exam.
 | `terraform import` vs `import` block | CLI, state only vs config-driven, plannable, can generate config |
 | `moved` vs `removed` | rename/relocate without destroy vs stop managing without destroy |
 | `fmt` vs `validate` | style vs correctness |
-| `-target` vs full plan | exceptional, partial — not for routine use |
+| `-target` vs full plan | exceptional, partial - not for routine use |
 
 ## Study loop (works every time)
 

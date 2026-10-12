@@ -1,4 +1,4 @@
-# 10 — Coverage Matrix
+# 10 - Coverage Matrix
 
 Maps every official objective in the **Exam Content List (004)** to where this repo covers it, and to the official **Learning Path** resources you should still open. "Official docs" = the pages HashiCorp lists for that objective; this repo summarises them but does not replace them.
 
