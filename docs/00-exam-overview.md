@@ -7,7 +7,7 @@
 | Name | HashiCorp Certified: Terraform Associate (004) |
 | Version of Terraform tested | 1.12 |
 | Delivery | Online proctored |
-| Question style | Multiple choice (single answer, multiple answer, true/false, fill-in-the-blank style) |
+| Question style | **True/false, multiple choice (one answer), and multiple answer** ("Pick the 2 correct responses"). HashiCorp states the questions are not meant to trick you. |
 | Duration | 60 minutes |
 | Price | $70.50 USD plus locally applicable taxes/fees (no free retake included) |
 | Language | English |
@@ -19,6 +19,23 @@
 Official page: <https://developer.hashicorp.com/certifications/infrastructure-automation>
 
 > Provider-specific (AWS/Azure/GCP) knowledge is **not required**. Tutorials use clouds only to demonstrate Terraform behaviour.
+
+## Prerequisites (per HashiCorp)
+
+- Basic terminal skills
+- Basic understanding of on-premises and cloud architecture
+- Best prepared with professional experience using Terraform in production, but performing the objectives in a **personal demo environment may be sufficient**
+- The exam covers **Terraform Community Edition (CLI) and HCP Terraform** concepts
+
+## Official question formats (from HashiCorp's sample questions)
+
+| Format | Example topic in the official samples |
+|---|---|
+| True/false | Passwords referenced in code, even as variables, end up in plain text in state (**True**) |
+| Multiple choice | Referencing a map variable value, e.g. `var.vpc_cidrs["us-east-1"]`; whether `terraform plan` auto-loads `terraform.tfvars` |
+| Multiple answer | Which commands auto-refresh state (`plan`, `apply`); what happens when you apply (changes made + state updated) |
+
+These topics are practised in `practice/` (look for the "official-style" questions).
 
 ## Who the exam is for
 

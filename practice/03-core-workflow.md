@@ -95,3 +95,43 @@
 
 **A.** `-replace` supersedes the deprecated `terraform taint`.
 </details>
+
+## Official-style questions (based on HashiCorp's sample formats)
+
+**Q9.** (Pick two) Which commands automatically refresh the state unless given additional flags?
+
+- A) `terraform plan`
+- B) `terraform state list`
+- C) `terraform apply`
+- D) `terraform validate`
+- E) `terraform output`
+
+<details><summary>Answer</summary>
+
+**A and C.** `plan` and `apply` refresh by default (`-refresh=false` to skip).
+</details>
+
+**Q10.** (Pick two) What happens when you apply a Terraform configuration?
+
+- A) Terraform makes the infrastructure changes defined in the configuration
+- B) Terraform downloads the plugins the configuration requires
+- C) Terraform updates the state file with the changes it made
+- D) Terraform corrects formatting errors
+- E) Terraform destroys and recreates all infrastructure
+
+<details><summary>Answer</summary>
+
+**A and C.** Plugins are downloaded by `init`; formatting is `fmt`.
+</details>
+
+**Q11.** When is `-target` appropriate?
+
+- A) In every routine plan
+- B) For exceptional situations, such as recovering from an error; Terraform warns that the rest of the configuration may be out of sync
+- C) To skip provider installation
+- D) To apply to a different workspace
+
+<details><summary>Answer</summary>
+
+**B.**
+</details>

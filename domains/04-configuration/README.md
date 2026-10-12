@@ -63,6 +63,10 @@ variable "instance_count" {
 
 Ways to set values: defaults, `TF_VAR_name`, `terraform.tfvars`, `*.auto.tfvars`, `-var`, `-var-file`, interactive prompt (if no value and no default).
 
+Accessing collections: `var.vpc_cidrs["us-east-1"]` (map key), `var.names[0]` (list index). Not `var.vpc_cidrs.0`, not `vpc_cidrs[...]` without `var.`.
+
+Auto-loaded files: `terraform.tfvars`, `terraform.tfvars.json`, `*.auto.tfvars`, `*.auto.tfvars.json` are used by a plain `terraform plan` — no flag needed. Any other file name (e.g., `prod.tfvars`) needs `-var-file=prod.tfvars`.
+
 **Precedence (lowest → highest):** default → env `TF_VAR_*` → `terraform.tfvars` → `terraform.tfvars.json` → `*.auto.tfvars*` (alphabetical) → `-var` / `-var-file` (order given).
 
 Useful arguments: `type`, `default`, `description`, `validation`, `sensitive`, `nullable`, `ephemeral`.
@@ -289,7 +293,8 @@ Ephemeral values can only be used in other ephemeral contexts (ephemeral resourc
 
 ## Exam traps
 
-- `sensitive` ≠ encrypted/not-in-state. `ephemeral` = not in state.
+- `sensitive` ≠ encrypted/not-in-state. `ephemeral` = not in state. Secrets referenced in code, even via variables, end up in **plaintext in state** (official sample true/false).
+- `terraform.tfvars` is loaded automatically; `prod.tfvars` is not.
 - `for_each` needs a **map or set of strings**, not a list (use `toset()`).
 - `count` index shifts → unexpected destroy/recreate; `for_each` keys are stable.
 - Child modules only see what you pass in; parent sees only child `output`s.

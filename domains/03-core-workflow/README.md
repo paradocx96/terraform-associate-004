@@ -62,6 +62,18 @@ Plan symbols:
 | `-/+` | destroy and recreate (replace) |
 | `+/-` | create then destroy (with `create_before_destroy`) |
 
+### Which commands refresh state automatically?
+
+`terraform plan` and `terraform apply` (and therefore `destroy`) **refresh state from real infrastructure by default**. Skip with `-refresh=false`. Commands like `validate`, `output`, `state list`, `show` do **not** refresh. (Official sample question: "Which commands automatically refresh the state? → `plan` and `apply`".)
+
+### The resource graph
+
+Terraform builds a **dependency graph** (DAG) from references and `depends_on`, creates independent resources in parallel (default 10 at a time, `-parallelism`), and destroys in reverse order. View it with `terraform graph` (DOT format).
+
+### Targeting (`-target`)
+
+`terraform plan/apply -target=ADDR` limits the operation to a resource **and its dependencies**. Terraform prints a warning because it is for **exceptional situations** (e.g., recovering from an error or working around a provider issue), not routine use: it can leave the rest of the configuration out of sync.
+
 ## 3e. `terraform apply`
 
 Executes the plan and updates state.
@@ -71,6 +83,7 @@ Executes the plan and updates state.
 - `-auto-approve` — skip the prompt (CI/automation).
 - `-replace=ADDR` — force recreate a single resource (modern replacement for `terraform taint`).
 - If apply fails midway, state records what *was* created; fix and re-run.
+- What happens on apply: Terraform makes the infrastructure changes **and updates the state**. It does not download providers (that is `init`) or fix formatting (that is `fmt`).
 
 ## 3f. `terraform destroy`
 

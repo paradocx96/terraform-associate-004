@@ -54,3 +54,13 @@ Cover the answers, say T or F out loud, then check. Do a batch of 10 a day.
 | 48 | `terraform console` lets you evaluate expressions. | **T** |
 | 49 | Terraform supports user-defined functions in HCL. | **F** — built-in only |
 | 50 | Destroy removes the state file from disk. | **F** — the file remains with updated contents |
+| 51 | `terraform plan` and `terraform apply` refresh state by default. | **T** |
+| 52 | `terraform validate` and `terraform output` refresh state. | **F** |
+| 53 | `terraform apply` downloads provider plugins. | **F** — `init` does |
+| 54 | `terraform.tfvars` is loaded automatically by `terraform plan`. | **T** |
+| 55 | `prod.tfvars` is loaded automatically. | **F** — needs `-var-file` |
+| 56 | `-target` is recommended for routine use. | **F** — exceptional situations only |
+| 57 | HCP Terraform execution modes are Remote, Local and Agent. | **T** |
+| 58 | Reusable modules should declare their own `provider` blocks. | **F** |
+| 59 | Passwords referenced via variables still appear in plaintext in state. | **T** |
+| 60 | The four troubleshooting error types are language, state, core and provider. | **T** |

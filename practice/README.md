@@ -19,7 +19,7 @@
 | [`06-state-management.md`](06-state-management.md) | 6 — State |
 | [`07-maintain-infrastructure.md`](07-maintain-infrastructure.md) | 7 — Maintain |
 | [`08-hcp-terraform.md`](08-hcp-terraform.md) | 8 — HCP Terraform |
-| [`rapid-fire.md`](rapid-fire.md) | 50 true/false flash statements |
+| [`rapid-fire.md`](rapid-fire.md) | 60 true/false flash statements |
 
 ## How to use
 

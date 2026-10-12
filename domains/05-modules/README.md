@@ -81,6 +81,15 @@ output "app_instance" {
 
 Providers: child modules inherit the parent's default (non-aliased) provider configurations. Pass aliased ones with `providers = { aws = aws.west }`. Avoid defining `provider` blocks inside reusable modules.
 
+## Module composition and best practices (learning-path docs)
+
+- Keep module hierarchies **shallow/flat**; avoid deeply nested modules.
+- Prefer **composition**: the root module wires small modules together by passing one module's outputs into another's inputs (`module.network.subnet_ids` → `module.app`).
+- Use **encapsulation**: expose only what callers need via variables/outputs.
+- Pass in existing objects (IDs, data source results) rather than hard-coding lookups inside the module, so it stays reusable.
+- **Standard module structure:** `main.tf`, `variables.tf`, `outputs.tf`, `README.md`, optionally `modules/` and `examples/`.
+- **Providers within modules:** reusable modules should not declare `provider` blocks; declare `required_providers` and let the caller configure providers (use `providers = { ... }` to pass aliases).
+
 ## 5d. Module versions
 
 - `version` is supported **only** for modules from a **registry** (public or private). It accepts the same constraint syntax as providers (`~> 6.0`, `>= 5.0, < 7.0`).
