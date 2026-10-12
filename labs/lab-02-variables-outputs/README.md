@@ -1,4 +1,4 @@
-# Lab 02 — Variables, Locals, Outputs and Precedence
+# Lab 02 - Variables, Locals, Outputs and Precedence
 
 **Objectives:** 4a–4d, 4g (validation), 4h (sensitive) · **Needs:** Terraform CLI only
 
@@ -6,8 +6,8 @@
 
 1. `terraform init`
 2. `export TF_VAR_api_token=abc123` then `terraform apply`. Notice the `token` output is redacted: `terraform output token` vs `terraform output -raw token`.
-3. Inspect `terraform.tfstate`. Can you find `abc123`? (Yes — `sensitive` redacts CLI output only. This is a key exam point.)
-4. **Precedence experiment** — change `environment` using each method and note which wins:
+3. Inspect `terraform.tfstate`. Can you find `abc123`? (Yes - `sensitive` redacts CLI output only. This is a key exam point.)
+4. **Precedence experiment** - change `environment` using each method and note which wins:
    - default (`dev`)
    - `export TF_VAR_environment=staging`
    - create `terraform.tfvars` containing `environment = "prod"`
